@@ -3,13 +3,16 @@ import { LangChainModule } from 'nestjs-langchain';
 import { AppController } from './app.controller.js';
 import { AppService } from './app.service.js';
 import { AskController } from './ask.controller.js';
+import { CatalogModule } from './catalog/catalog.module.js';
 
 @Module({
   imports: [
+    CatalogModule,
     LangChainModule.register({
       // `provider:model`; the provider reads OPENAI_API_KEY.
       model: { model: 'openai:gpt-5-mini' },
-      systemPrompt: 'You are a helpful assistant. Answer in one paragraph.',
+      systemPrompt: 'You sell computer accessories. Answer from the catalog.',
+      tools: [CatalogModule],
     }),
   ],
   controllers: [AppController, AskController],

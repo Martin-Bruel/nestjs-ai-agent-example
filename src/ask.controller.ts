@@ -6,8 +6,10 @@ export class AskController {
   constructor(private readonly agent: Agent) {}
 
   @Post()
-  async ask(@Body('question') question: string): Promise<string> {
-    const { output } = await this.agent.run(question);
-    return output;
+  async ask(
+    @Body('question') question: string,
+  ): Promise<{ output: string; tools: string[] }> {
+    const { output, tools } = await this.agent.run(question);
+    return { output, tools };
   }
 }

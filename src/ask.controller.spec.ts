@@ -11,7 +11,7 @@ describe('AskController', () => {
     await moduleRef.close();
   });
 
-  it('answers with the output of the agent', async () => {
+  it('answers with the output of the agent and the tools it called', async () => {
     // Replays an answer: no API key, no network.
     const model = fakeModel().respond(
       new AIMessage('Nest creates your dependencies and passes them in.'),
@@ -28,7 +28,10 @@ describe('AskController', () => {
       .get(AskController)
       .ask('What is dependency injection?');
 
-    expect(answer).toBe('Nest creates your dependencies and passes them in.');
+    expect(answer).toEqual({
+      output: 'Nest creates your dependencies and passes them in.',
+      tools: [],
+    });
     expect(model.calls[0].messages.at(-1)?.text).toBe(
       'What is dependency injection?',
     );

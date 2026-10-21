@@ -38,9 +38,9 @@ describe('AppController (e2e)', () => {
   it('/ask (POST)', () => {
     return request(app.getHttpServer())
       .post('/ask')
-      .send({ question: 'What is dependency injection?' })
+      .send({ question: 'Is the K2 keyboard in stock?' })
       .expect(201)
-      .expect('An answer.');
+      .expect({ output: 'An answer.', tools: [] });
   });
 
   afterEach(async () => {
