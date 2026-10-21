@@ -4,10 +4,10 @@ A NestJS app with an AI agent, built with
 [nestjs-langchain](https://github.com/Martin-Bruel/nestjs-langchain): the code of the series
 _AI agents with NestJS_. Each article has a tag holding the code as the article leaves it.
 
-| Tag                                                                             | Article                                            |
-| ------------------------------------------------------------------------------- | -------------------------------------------------- |
-| [`part-1`](https://github.com/Martin-Bruel/nestjs-ai-agent-example/tree/part-1) | NestJS + LangChain: Build an AI Agent in 5 Minutes |
-| [`part-2`](https://github.com/Martin-Bruel/nestjs-ai-agent-example/tree/part-2) | NestJS Tool Calling: Turn Services into LLM Tools  |
+| Tag                                                                             | Article                                                                                                                               |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [`part-1`](https://github.com/Martin-Bruel/nestjs-ai-agent-example/tree/part-1) | [NestJS + LangChain: Build an AI Agent in 5 Minutes](https://dev.to/martinbruel/nestjs-langchain-build-an-ai-agent-in-5-minutes-1jfd) |
+| [`part-2`](https://github.com/Martin-Bruel/nestjs-ai-agent-example/tree/part-2) | NestJS Tool Calling: Turn Services into LLM Tools                                                                                     |
 
 ## Run it
 
