@@ -1,0 +1,33 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      # @nestjs/* pin each other's major, so they move together.
+      nestjs:
+        patterns:
+          - '@nestjs/*'
+      # The library and LangChain, whose updates the CI checks against the
+      # example.
+      langchain:
+        patterns:
+          - nestjs-langchain
+          - langchain
+          - '@langchain/*'
+          - zod
+      minor-patch:
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        update-types: [minor, patch]
