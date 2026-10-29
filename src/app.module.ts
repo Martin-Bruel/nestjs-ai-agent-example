@@ -4,6 +4,7 @@ import { AppController } from './app.controller.js';
 import { AppService } from './app.service.js';
 import { AskController } from './ask.controller.js';
 import { CatalogModule } from './catalog/catalog.module.js';
+import { OrdersController } from './orders/orders.controller.js';
 
 @Module({
   imports: [
@@ -15,7 +16,7 @@ import { CatalogModule } from './catalog/catalog.module.js';
       tools: [CatalogModule],
     }),
   ],
-  controllers: [AppController, AskController],
+  controllers: [AppController, AskController, OrdersController],
   providers: [AppService],
 })
 export class AppModule {}

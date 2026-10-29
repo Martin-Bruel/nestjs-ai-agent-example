@@ -32,6 +32,17 @@ curl -X POST http://localhost:3000/ask \
 The agent answers from a small catalog, in `src/catalog/products.repository.ts`, through the two
 tools of `src/catalog/catalog.service.ts`. The response lists the tools it called.
 
+Or have it draft an order from a customer message:
+
+```bash
+curl -X POST http://localhost:3000/orders/draft \
+  -H 'Content-Type: application/json' \
+  -d '{"message": "Two K2 keyboards, please."}'
+```
+
+The response is the typed object of `src/orders/order-draft.schema.ts`, or a 422 when the
+model's answer never matches it.
+
 Another provider: install its package and change `model` in `src/app.module.ts`, for instance
 `anthropic:claude-sonnet-5-5` with `@langchain/anthropic`.
 
