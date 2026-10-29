@@ -4,10 +4,11 @@ A NestJS app with an AI agent, built with
 [nestjs-langchain](https://github.com/Martin-Bruel/nestjs-langchain): the code of the series
 _AI agents with NestJS_. Each article has a tag holding the code as the article leaves it.
 
-| Tag                                                                             | Article                                                                                                                               |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| [`part-1`](https://github.com/Martin-Bruel/nestjs-ai-agent-example/tree/part-1) | [NestJS + LangChain: Build an AI Agent in 5 Minutes](https://dev.to/martinbruel/nestjs-langchain-build-an-ai-agent-in-5-minutes-1jfd) |
-| [`part-2`](https://github.com/Martin-Bruel/nestjs-ai-agent-example/tree/part-2) | [NestJS Tool Calling: Turn Services into LLM Tools](https://dev.to/martinbruel/nestjs-tool-calling-turn-services-into-llm-tools-2ac4) |
+| Tag                                                                             | Article                                                                                                                                       |
+| ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`part-1`](https://github.com/Martin-Bruel/nestjs-ai-agent-example/tree/part-1) | [NestJS + LangChain: Build an AI Agent in 5 Minutes](https://dev.to/martinbruel/nestjs-langchain-build-an-ai-agent-in-5-minutes-1jfd)         |
+| [`part-2`](https://github.com/Martin-Bruel/nestjs-ai-agent-example/tree/part-2) | [NestJS Tool Calling: Turn Services into LLM Tools](https://dev.to/martinbruel/nestjs-tool-calling-turn-services-into-llm-tools-2ac4)         |
+| [`part-3`](https://github.com/Martin-Bruel/nestjs-ai-agent-example/tree/part-3) | [LangChain Structured Output in NestJS: Typed with Zod](https://dev.to/martinbruel/langchain-structured-output-in-nestjs-typed-with-zod-12a1) |
 
 ## Run it
 
